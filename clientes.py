@@ -9,4 +9,3 @@ nome_ficheiro_lista_de_clientes = "lista_de_clientes.pk"
 # todos os outros ficheiros clientes-*.py, e inclusive estes comentários
 
 # ...
-
