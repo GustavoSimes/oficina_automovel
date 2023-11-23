@@ -44,7 +44,7 @@ def pause():
 
     input("Pressione ENTER para continuar...")
 
-    def pergunta_id(questao, lista, mostra_lista=False):
+def pergunta_id(questao, lista, mostra_lista=False):
     """TODO: documentação
 
     :param questao:
