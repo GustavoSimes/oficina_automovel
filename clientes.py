@@ -29,9 +29,7 @@ def cria_novo_cliente():
         "nif": nif,
         "endereco": endereco,
     }
-
-
-    pass
+    return novo_cliente
 
 def imprime_lista_de_clientes(lista_de_clientes):
     """TODO: documentação"""
