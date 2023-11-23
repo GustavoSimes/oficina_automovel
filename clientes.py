@@ -7,10 +7,21 @@ def cria_novo_cliente():
 
     :return: dicionario com o novo cliente, {"nome": <<nome>>, "nif": <<nif>>, ...}
     """
-    # TODO: pedir os dados do cliente e não esquecer de os devolver
-    # ...
+    
+    print("Introduza os dados do novo cliente:")
 
-    pass
+    nome = input("Nome: ")
+    idade = input("Idade: ")
+    nif = input("NIF: ")
+    endereco = input("Endereço: ")
+
+    novo_cliente = {
+        "nome": nome,
+        "idade": idade,
+        "nif": nif,
+        "endereco": endereco,
+    }
+    return novo_cliente
 
 def imprime_lista_de_clientes(lista_de_clientes):
     """TODO: documentação"""
