@@ -17,7 +17,9 @@ def cria_novo_cliente():
     """
     # TODO: pedir os dados do cliente e não esquecer de os devolver
     # ...
-
+    
+    print("Introduza os dados do novo cliente:")
+    
     nome = input("Nome: ")
     idade = input("Idade: ")
     nif = input("NIF: ")
