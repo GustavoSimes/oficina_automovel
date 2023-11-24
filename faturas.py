@@ -20,7 +20,6 @@ def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
 
     id_cliente = pergunta_id(questao="Qual o id do cliente?", lista=lista_de_clientes, mostra_lista=True)
     id_veiculo = pergunta_id(questao="Qual o id do veiculo?", lista=lista_de_veiculos, mostra_lista=True)
-    data = pergunta_id(questao="Qual é a data?", lista=lista_de_veiculos, mostra_lista=True)
     descricao = pergunta_id(questao="Qual é a descrição?", lista=lista_de_veiculos, mostra_lista=True)
 
     # TODO: Pedir o resto dos dados da fatura, e não esquecer de os guardar no dicionario
