@@ -27,6 +27,7 @@ def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
 
     fatura = {"cliente": id_cliente,
               "veiculo": id_veiculo,
-              "data": date.today()}
+              "data": date.today(),
+              "descrição": descricao}
 
     return fatura
