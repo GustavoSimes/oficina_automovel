@@ -5,17 +5,6 @@ from io_ficheiros import (carrega_as_listas_dos_ficheiros,
 from io_terminal import pause
 from veiculos import cria_novo_veiculo, imprime_lista_de_veiculos
 
-
-
-####################################################################
-#
-# TODO: Copie para aqui o código de cada uma das funções nos
-# ficheiros com o nome main-*.py e faça um commit de cada vez
-# Quando este ficheiro estiver completo com todas as suas funções,
-# deve ser o unico ficheiro main.py existente, deve apagar
-# todos os outros ficheiros main-*.py, e inclusive estes comentários
-
-# ...
 def menu():
     """Menu principal da aplicação"""
 
@@ -79,11 +68,6 @@ def menu():
         elif op == "lf":
             imprime_lista_de_faturas(lista_de_faturas)
             pause()
-
-
-
-
-####################################################################
 
 if __name__ == "__main__":
     menu()
