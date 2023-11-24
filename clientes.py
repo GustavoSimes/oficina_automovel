@@ -14,12 +14,14 @@ def cria_novo_cliente():
     idade = input("Idade: ")
     nif = input("NIF: ")
     endereco = input("Endereço: ")
+    email = input("E-mail: ")
 
     novo_cliente = {
         "nome": nome,
         "idade": idade,
         "nif": nif,
         "endereco": endereco,
+        "email": email
     }
     return novo_cliente
 
