@@ -20,7 +20,12 @@ def cria_novo_veiculo():
     # ...
 
     veiculo = {"marca": marca,
-               "matricula": matricula}
+               "modelo": modelo
+               "matricula": matricula
+               "ano": ano
+               "classe": classe
+               "lugares": lugares
+               }
 
     return veiculo
 
