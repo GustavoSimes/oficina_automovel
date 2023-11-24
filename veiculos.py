@@ -10,6 +10,7 @@ def cria_novo_veiculo():
     """
 
     marca = input("marca? ")
+    modelo = input("modelo? ")
     matricula = input("matricula? ").upper()
     ano = input("ano de compra? ")
     classe = input("classe (1-5)? ") #classe do veiculo de acordo com a via verde (1-5)
