@@ -15,6 +15,9 @@ def cria_novo_veiculo():
     ano = input("ano de compra? ")
     classe = input("classe (1-5)? ") #classe do veiculo de acordo com a via verde (1-5)
     lugares = input("lugares? ")
+    cor = input("cor? ")
+    comprimento = input("comprimento? ")
+    cilindrada = input("cilindrada? ")
 
     veiculo = {"marca": marca,
                "modelo": modelo,
