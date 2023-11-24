@@ -11,6 +11,9 @@ def cria_novo_veiculo():
 
     marca = input("marca? ")
     matricula = input("matricula? ").upper()
+    ano = input("ano de compra? ")
+    classe = input("classe? ")
+
     # TODO: Pedir o resto dos dados do veiculo, e não esquecer de os guardar no dicionario
     # ...
 
