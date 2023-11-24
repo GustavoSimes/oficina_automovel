@@ -24,7 +24,10 @@ def cria_novo_veiculo():
                "matricula": matricula,
                "ano": ano,
                "classe": classe,
-               "lugares": lugares
+               "lugares": lugares,
+               "cor": cor,
+               "comprimento": comprimento,
+               "cilindrada": cilindrada
                }
 
     return veiculo
