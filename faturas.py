@@ -7,8 +7,8 @@ nome_ficheiro_lista_de_faturas = "lista_de_faturas.pk"
 def imprime_lista_de_faturas(lista_de_faturas):
     """TODO: documentação"""
 
-    # TODO: Implementar esta função
-    # ...
+    for fatura in lista_de_faturas:
+        print(fatura)
     pass
 
 def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
