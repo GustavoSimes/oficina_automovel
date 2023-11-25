@@ -28,5 +28,12 @@ def cria_novo_cliente():
 def imprime_lista_de_clientes(lista_de_clientes):
     """TODO: documentação"""
 
-    #TODO: Implementar esta função
-    # ...
+    if not lista_de_clientes:
+        print("Nenhum cliente na lista.")
+    else:
+        for cliente in lista_de_clientes:
+            print("\nNome: ", cliente["nome"])
+            print("Idade: ", cliente["idade"])
+            print("NIF: ", cliente["nif"])
+            print("Endereço: ", cliente["endereco"])
+            print("E-mail: ", cliente["email"])
