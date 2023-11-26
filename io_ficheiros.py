@@ -7,13 +7,21 @@ from veiculos import nome_ficheiro_lista_de_veiculos
 
 
 def carrega_as_listas_dos_ficheiros():
-    """TODO: documentação"""
+    """Carrega as listas de veículos, clientes e faturas a partir de arquivos.
 
+    Lê os dados de três arquivos diferentes, cada um contendo uma lista específica:
+    - `nome_ficheiro_lista_de_veiculos`: ficheiro com a lista de veículos.
+    - `nome_ficheiro_lista_de_clientes`: ficheiro com a lista de clientes.
+    - `nome_ficheiro_lista_de_faturas`: ficheiro com a lista de faturas.
+
+    :return: Uma tupla contendo as listas de veículos, clientes e faturas, nessa ordem.
+    :rtype: tuple
+    """
     lista_de_veiculos = le_de_ficheiro(nome_ficheiro_lista_de_veiculos)
     lista_de_clientes = le_de_ficheiro(nome_ficheiro_lista_de_clientes)
     lista_de_faturas = le_de_ficheiro(nome_ficheiro_lista_de_faturas)
 
-    return  lista_de_veiculos, lista_de_clientes, lista_de_faturas
+    return lista_de_veiculos, lista_de_clientes, lista_de_faturas
 
 def guarda_as_listas_em_ficheiros(lista_de_veiculos, lista_de_clientes, lista_de_faturas):
     """TODO: documentação
