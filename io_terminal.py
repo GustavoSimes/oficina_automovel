@@ -37,14 +37,24 @@ def pause():
     input("Pressione ENTER para continuar...")
 
 def pergunta_id(questao, lista, mostra_lista=False):
-    """TODO: documentação
-
-    :param questao:
-    :param lista:
-    :param mostra_lista:
-    :return:
     """
+    Pede ao utilizador para selecionar um índice com base numa lista fornecida.
 
+    :param questao: Uma string que representa a pergunta apresentada.
+    :param lista: Uma lista de dicionários para escolher.
+    :param mostra_lista: Um booleano que indica se deve mostrar a lista antes de pedir ao utilizador. O padrão é Falso.
+
+    :return: O índice selecionado (id) da lista.
+
+    Esta função pede ao utilizador para escolher um índice correspondente à lista fornecida.
+    Se `mostra_lista` for Verdadeiro, exibe a lista como uma tabela usando a função `imprime_lista` antes de pedir ao utilizador.
+
+    Exemplo de Utilização:
+
+    >>> pergunta_id("Selecione um item: ", [{"atrib1": valor1, "atrib2": valor2}, {"atrib1": valor3, "atrib2": valor4}])
+
+    :raises ValueError: Se o índice inserido estiver fora do intervalo válido.
+    """
     if mostra_lista:
         imprime_lista(cabecalho="", lista=lista)
 
