@@ -26,8 +26,19 @@ def cria_novo_cliente():
     return novo_cliente
 
 def imprime_lista_de_clientes(lista_de_clientes):
-    """TODO: documentação"""
+    """Imprime os detalhes dos clientes na lista.
 
+    Esta função recebe uma lista de clientes e imprime as informações
+    relevantes de cada cliente, incluindo nome, idade, NIF, endereço e e-mail.
+
+    :param lista_de_clientes: Uma lista contendo dicionários com informações
+                              dos clientes.
+    :type lista_de_clientes: list
+
+    :return: Nenhum valor é retornado.
+    :rtype: None
+    """
+    
     if not lista_de_clientes:
         print("Nenhum cliente na lista.")
     else:
