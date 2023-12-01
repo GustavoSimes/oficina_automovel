@@ -1,15 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="pt" data-content_root="./">
+<html class="no-js" lang="pt" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Índice" href="genindex.html" /><link rel="search" title="Pesquisar" href="search.html" /><link rel="prev" title="main module" href="main.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Índice" href="../genindex.html" /><link rel="search" title="Pesquisar" href="../search.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>veiculos module - Documentação Oficina Automóvel SAG</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+        <title>faturas - Documentação Oficina Automóvel SAG</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -123,7 +122,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Documentação Oficina Automóvel SAG </div></a>
+      <a href="../index.html"><div class="brand">Documentação Oficina Automóvel SAG </div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -134,7 +133,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -143,25 +142,25 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
   
   <span class="sidebar-brand-text">Documentação Oficina Automóvel SAG </span>
   
-</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Pesquisar" name="q" aria-label="Pesquisar">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Conteúdos:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="clientes.html">clientes module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faturas.html">faturas module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="io_ficheiros.html">io_ficheiros module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="io_terminal.html">io_terminal module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">veiculos module</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../clientes.html">clientes module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faturas.html">faturas module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../io_ficheiros.html">io_ficheiros module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../io_terminal.html">io_terminal module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../veiculos.html">veiculos module</a></li>
 </ul>
 
 </div>
@@ -181,8 +180,7 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          
-<div class="theme-toggle-container theme-toggle-content">
+          <div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -190,51 +188,57 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="module-veiculos">
-<span id="veiculos-module"></span><h1>veiculos module<a class="headerlink" href="#module-veiculos" title="Link to this heading">#</a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="veiculos.cria_novo_veiculo">
-<span class="sig-prename descclassname"><span class="pre">veiculos.</span></span><span class="sig-name descname"><span class="pre">cria_novo_veiculo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/veiculos.html#cria_novo_veiculo"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#veiculos.cria_novo_veiculo" title="Link to this definition">#</a></dt>
-<dd><p>Pede ao utilizador para introduzir um novo veiculo</p>
-<dl class="field-list simple">
-<dt class="field-odd">Retorno<span class="colon">:</span></dt>
-<dd class="field-odd"><p>dicionario com um veiculo na forma
-{«marca»: &lt;&lt;marca&gt;&gt;, «matricula»: &lt;&lt;matricula&gt;&gt;, …}</p>
-</dd>
-</dl>
-</dd></dl>
+          <h1>Código fonte de faturas</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="veiculos.imprime_lista_de_veiculos">
-<span class="sig-prename descclassname"><span class="pre">veiculos.</span></span><span class="sig-name descname"><span class="pre">imprime_lista_de_veiculos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista_de_veiculos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/veiculos.html#imprime_lista_de_veiculos"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#veiculos.imprime_lista_de_veiculos" title="Link to this definition">#</a></dt>
-<dd><p>TODO: documentação</p>
-</dd></dl>
+<span class="kn">from</span> <span class="nn">io_terminal</span> <span class="kn">import</span> <span class="n">imprime_lista</span><span class="p">,</span> <span class="n">pergunta_id</span>
 
-</section>
+<span class="n">nome_ficheiro_lista_de_faturas</span> <span class="o">=</span> <span class="s2">&quot;lista_de_faturas.pk&quot;</span>
 
+<div class="viewcode-block" id="imprime_lista_de_faturas">
+<a class="viewcode-back" href="../faturas.html#faturas.imprime_lista_de_faturas">[documentos]</a>
+<span class="k">def</span> <span class="nf">imprime_lista_de_faturas</span><span class="p">(</span><span class="n">lista_de_faturas</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">fatura</span> <span class="ow">in</span> <span class="n">lista_de_faturas</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">fatura</span><span class="p">)</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="cria_nova_fatura">
+<a class="viewcode-back" href="../faturas.html#faturas.cria_nova_fatura">[documentos]</a>
+<span class="k">def</span> <span class="nf">cria_nova_fatura</span><span class="p">(</span><span class="n">lista_de_clientes</span><span class="p">,</span> <span class="n">lista_de_veiculos</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Pede ao utilizador para introduzir os dados de uma nova fatura</span>
+
+<span class="sd">    :return: dicionario com uma fatura, na forma</span>
+<span class="sd">        {&quot;cliente&quot;: &lt;&lt;id_cliente&gt;&gt;, &quot;veiculo&quot;: &lt;&lt;id_veiculo&gt;&gt;, &quot;data&quot;: &lt;&lt;data&gt;&gt;, ...}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">id_cliente</span> <span class="o">=</span> <span class="n">pergunta_id</span><span class="p">(</span><span class="n">questao</span><span class="o">=</span><span class="s2">&quot;Qual o id do cliente?&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">lista_de_clientes</span><span class="p">,</span> <span class="n">mostra_lista</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">id_veiculo</span> <span class="o">=</span> <span class="n">pergunta_id</span><span class="p">(</span><span class="n">questao</span><span class="o">=</span><span class="s2">&quot;Qual o id do veiculo?&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">lista_de_veiculos</span><span class="p">,</span> <span class="n">mostra_lista</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">descricao</span> <span class="o">=</span> <span class="n">pergunta_id</span><span class="p">(</span><span class="n">questao</span><span class="o">=</span><span class="s2">&quot;Qual é a descrição?&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">lista_de_veiculos</span><span class="p">,</span> <span class="n">mostra_lista</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">deseja_email</span> <span class="o">=</span> <span class="n">pergunta_id</span><span class="p">(</span><span class="n">questao</span><span class="o">=</span><span class="s2">&quot;Deseja receber a fatura por email (S/N)?&quot;</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">lista_de_veiculos</span><span class="p">,</span> <span class="n">mostra_lista</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">fatura</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;cliente&quot;</span><span class="p">:</span> <span class="n">id_cliente</span><span class="p">,</span>
+              <span class="s2">&quot;veiculo&quot;</span><span class="p">:</span> <span class="n">id_veiculo</span><span class="p">,</span>
+              <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">(),</span>
+              <span class="s2">&quot;descrição&quot;</span><span class="p">:</span> <span class="n">descricao</span><span class="p">,</span>
+              <span class="s2">&quot;deseja_email&quot;</span><span class="p">:</span> <span class="n">deseja_email</span><span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">fatura</span></div>
+
+</pre></div>
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
           
-          <a class="prev-page" href="main.html">
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">main module</div>
-                
-              </div>
-            </a>
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -253,36 +257,16 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">veiculos module</a><ul>
-<li><a class="reference internal" href="#veiculos.cria_novo_veiculo"><code class="docutils literal notranslate"><span class="pre">cria_novo_veiculo()</span></code></a></li>
-<li><a class="reference internal" href="#veiculos.imprime_lista_de_veiculos"><code class="docutils literal notranslate"><span class="pre">imprime_lista_de_veiculos()</span></code></a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=103ffe9a"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
-    <script src="_static/translations.js?v=3b002d5c"></script>
+</div><script src="../_static/documentation_options.js?v=103ffe9a"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../_static/translations.js?v=3b002d5c"></script>
     </body>
 </html>
