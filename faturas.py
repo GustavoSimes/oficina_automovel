@@ -5,6 +5,31 @@ from io_terminal import imprime_lista, pergunta_id
 nome_ficheiro_lista_de_faturas = "lista_de_faturas.pk"
 
 def imprime_lista_de_faturas(lista_de_faturas):
+    """
+    Imprime uma lista de faturas.
+
+    Esta função percorre a lista de faturas e imprime cada uma delas.
+
+    :param lista_de_faturas: Uma lista de dicionários, onde cada dicionário representa uma fatura.
+    :type lista_de_faturas: list[dict]
+
+    :return: None
+    :rtype: None
+
+    :Example:
+
+    >>> faturas = [
+    ...     {"cliente": 1, "veiculo": 101, "data": date(2023, 12, 1), "descricao": "Reparo de motor", "deseja_email": True},
+    ...     {"cliente": 2, "veiculo": 102, "data": date(2023, 12, 2), "descricao": "Troca de pneus", "deseja_email": False},
+    ...     # Adicione mais faturas conforme necessário
+    ... ]
+
+    >>> imprime_lista_de_faturas(faturas)
+    {'cliente': 1, 'veiculo': 101, 'data': datetime.date(2023, 12, 1), 'descricao': 'Reparo de motor', 'deseja_email': True}
+    {'cliente': 2, 'veiculo': 102, 'data': datetime.date(2023, 12, 2), 'descricao': 'Troca de pneus', 'deseja_email': False}
+    ...
+    """
+
     for fatura in lista_de_faturas:
         print(fatura)
     pass
