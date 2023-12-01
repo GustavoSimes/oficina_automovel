@@ -1,7 +1,7 @@
-Faturas module
+faturas module
 ==============
 
-.. automodule:: Faturas
+.. automodule:: faturas
    :members:
    :undoc-members:
    :show-inheritance:

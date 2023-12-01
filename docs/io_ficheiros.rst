@@ -1,7 +1,7 @@
-io\_Ficheiros module
+io\_ficheiros module
 ====================
 
-.. automodule:: io_Ficheiros
+.. automodule:: io_ficheiros
    :members:
    :undoc-members:
    :show-inheritance:

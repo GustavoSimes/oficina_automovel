@@ -1,7 +1,7 @@
-Clientes module
+clientes module
 ===============
 
-.. automodule:: Clientes
+.. automodule:: clientes
    :members:
    :undoc-members:
    :show-inheritance:

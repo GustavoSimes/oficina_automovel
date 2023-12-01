@@ -10,12 +10,12 @@ Welcome to oficina_automovel's documentation!
    :maxdepth: 4
    :caption: Conteúdos:
 
-   Clientes
-   Faturas
-   io_Ficheiros
-   io_Terminal
-   Main
-   Veiculos
+   clientes
+   faturas
+   io_ficheiros
+   io_terminal
+   main
+   veiculos
 
 
 Indices e Tabelas
