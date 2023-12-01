@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to oficina_automovel's documentation!
-=============================================
+Bem-vindo à documentação da Oficina Automóvel SAG!
+==================================================
 
 .. toctree::
    :maxdepth: 4
