@@ -12,7 +12,7 @@ sys.path.insert(0, 'C:\\Users\\simes\\Desktop\\Uni 1ºAno\\ADC\\oficina_automove
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'oficina_automovel'
+project = 'Oficina Automóvel SAG'
 copyright = '2023, Gustavo Simes, Abel Dias, Simão Marcos'
 author = 'Gustavo Simes, Abel Dias, Simão Marcos'
 
