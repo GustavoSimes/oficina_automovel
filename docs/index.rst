@@ -8,17 +8,17 @@ Welcome to oficina_automovel's documentation!
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: Conteúdos:
 
-   clientes
-   faturas
-   io_ficheiros
-   io_terminal
-   main
-   veiculos
+   Clientes
+   Faturas
+   io_Ficheiros
+   io_Terminal
+   Main
+   Veiculos
 
 
-Indices and tables
+Indices e Tabelas
 ==================
 
 * :ref:`genindex`

@@ -1,7 +1,7 @@
-io\_terminal module
+io\_Terminal module
 ===================
 
-.. automodule:: io_terminal
+.. automodule:: io_Terminal
    :members:
    :undoc-members:
    :show-inheritance:

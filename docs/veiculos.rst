@@ -1,7 +1,7 @@
-veiculos module
+Veiculos module
 ===============
 
-.. automodule:: veiculos
+.. automodule:: Veiculos
    :members:
    :undoc-members:
    :show-inheritance:
