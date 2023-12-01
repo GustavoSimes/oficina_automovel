@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Bem-vindo à documentação da Oficina Automóvel SAG!
-=============================================
+===================================================
 
 .. toctree::
    :maxdepth: 4
