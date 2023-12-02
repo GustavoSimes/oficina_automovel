@@ -8,7 +8,7 @@ Bem-vindo à Oficina Automóvel, o seu espaço dedicado a informações sobre a 
 
 ## Como começar
 
-
+Descarregue o código e faça "run" no seu IDE de escolha, depois utilize o terminal em conjunto com o teclado do computador para introduzir imformação.
 
 ## Serviços
 
