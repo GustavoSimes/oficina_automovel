@@ -1,15 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="pt" data-content_root="">
+<html class="no-js" lang="pt" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Índice" href="genindex.html" /><link rel="search" title="Pesquisar" href="search.html" /><link rel="next" title="io_ficheiros module" href="io_ficheiros.html" /><link rel="prev" title="clientes module" href="clientes.html" />
 
-    <!-- Generated with Sphinx 6.2.1 and Furo 2023.09.10 -->
+    <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>faturas module - Documentação Oficina Automóvel SAG</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=369552022d0b975c8e74270ce6eabe0fb7978f24" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -190,14 +190,115 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="faturas-module">
-<h1>faturas module<a class="headerlink" href="#faturas-module" title="Permalink to this heading">#</a></h1>
+          <section id="module-faturas">
+<span id="faturas-module"></span><h1>faturas module<a class="headerlink" href="#module-faturas" title="Link to this heading">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="faturas.cria_nova_fatura">
+<span class="sig-prename descclassname"><span class="pre">faturas.</span></span><span class="sig-name descname"><span class="pre">cria_nova_fatura</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista_de_clientes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lista_de_veiculos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/faturas.html#cria_nova_fatura"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#faturas.cria_nova_fatura" title="Link to this definition">#</a></dt>
+<dd><p>Pede ao utilizador para introduzir os dados de uma nova fatura.</p>
+<p>Esta função interage com o utilizador para obter os dados necessários para criar
+uma nova fatura. Os dados incluem o ID do cliente, o ID do veículo, a descrição da
+fatura e se o cliente deseja receber a fatura por e-mail. A data da fatura é definida
+automaticamente como a data atual.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lista_de_clientes</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – Uma lista de clientes, onde cada cliente é representado por um dicionário.</p></li>
+<li><p><strong>lista_de_veiculos</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – Uma lista de veículos, onde cada veículo é representado por um dicionário.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>Um dicionário representando a nova fatura, com as seguintes chaves:
+- «cliente»: ID do cliente.
+- «veiculo»: ID do veículo.
+- «data»: Data atual (objeto date).
+- «descricao»: Descrição da fatura.
+- «deseja_email»: Indica se o cliente deseja receber a fatura por e-mail (True/False).</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clientes</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;nome&quot;</span><span class="p">:</span> <span class="s2">&quot;Abel Dias&quot;</span><span class="p">,</span> <span class="s2">&quot;idade&quot;</span><span class="p">:</span> <span class="mi">63</span><span class="p">,</span> <span class="s2">&quot;nif&quot;</span><span class="p">:</span> <span class="s2">&quot;123456789&quot;</span><span class="p">,</span> <span class="s2">&quot;endereco&quot;</span><span class="p">:</span> <span class="s2">&quot;Rua das Gaivotas&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;abel.dias@exemplo.com&quot;</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;nome&quot;</span><span class="p">:</span> <span class="s2">&quot;Fernando Carvalho&quot;</span><span class="p">,</span> <span class="s2">&quot;idade&quot;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="s2">&quot;nif&quot;</span><span class="p">:</span> <span class="s2">&quot;987654321&quot;</span><span class="p">,</span> <span class="s2">&quot;endereco&quot;</span><span class="p">:</span> <span class="s2">&quot;Rua Caminho do Lago&quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;nando.carvalho@exemplo.com&quot;</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="c1"># Adicione mais clientes conforme necessário</span>
+<span class="gp">... </span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">veiculos</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">101</span><span class="p">,</span> <span class="s2">&quot;modelo&quot;</span><span class="p">:</span> <span class="s2">&quot;Carro A&quot;</span><span class="p">,</span> <span class="s2">&quot;ano&quot;</span><span class="p">:</span> <span class="mi">2022</span><span class="p">,</span> <span class="s2">&quot;cor&quot;</span><span class="p">:</span> <span class="s2">&quot;Azul&quot;</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">102</span><span class="p">,</span> <span class="s2">&quot;modelo&quot;</span><span class="p">:</span> <span class="s2">&quot;Carro B&quot;</span><span class="p">,</span> <span class="s2">&quot;ano&quot;</span><span class="p">:</span> <span class="mi">2021</span><span class="p">,</span> <span class="s2">&quot;cor&quot;</span><span class="p">:</span> <span class="s2">&quot;Vermelho&quot;</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="c1"># Adicione mais veículos conforme necessário</span>
+<span class="gp">... </span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nova_fatura</span> <span class="o">=</span> <span class="n">cria_nova_fatura</span><span class="p">(</span><span class="n">clientes</span><span class="p">,</span> <span class="n">veiculos</span><span class="p">)</span>
+<span class="go">Qual o id do cliente? (Mostrando lista de clientes)</span>
+<span class="go">[1] Abel Dias</span>
+<span class="go">[2] Fernando Carvalho</span>
+<span class="go">Selecione o ID do cliente: 1</span>
+</pre></div>
+</div>
+<p>Qual o id do veiculo? (Mostrando lista de veículos)
+[101] Carro A
+[102] Carro B
+Selecione o ID do veículo: 101</p>
+<p>Qual é a descrição? (Mostrando lista de veículos)
+[101] Carro A
+[102] Carro B
+Selecione o ID do veículo para obter a descrição: 101</p>
+<p>Deseja receber a fatura por email (S/N)? (Mostrando lista de veículos)
+[101] Carro A
+[102] Carro B
+Selecione o ID do veículo para confirmar a escolha: S</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">nova_fatura</span><span class="p">)</span>
+<span class="go">{&#39;cliente&#39;: 1, &#39;veiculo&#39;: 101, &#39;data&#39;: datetime.date(2023, 12, 1), &#39;descricao&#39;: &#39;Carro A&#39;, &#39;deseja_email&#39;: True}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="faturas.imprime_lista_de_faturas">
+<span class="sig-prename descclassname"><span class="pre">faturas.</span></span><span class="sig-name descname"><span class="pre">imprime_lista_de_faturas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista_de_faturas</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/faturas.html#imprime_lista_de_faturas"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#faturas.imprime_lista_de_faturas" title="Link to this definition">#</a></dt>
+<dd><p>Imprime uma lista de faturas.</p>
+<p>Esta função percorre a lista de faturas e imprime cada uma delas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>lista_de_faturas</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – Uma lista de dicionários, onde cada dicionário representa uma fatura.</p>
+</dd>
+<dt class="field-even">Retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Example<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">faturas</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;cliente&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;veiculo&quot;</span><span class="p">:</span> <span class="mi">101</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;descricao&quot;</span><span class="p">:</span> <span class="s2">&quot;Reparo de motor&quot;</span><span class="p">,</span> <span class="s2">&quot;deseja_email&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;cliente&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;veiculo&quot;</span><span class="p">:</span> <span class="mi">102</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;descricao&quot;</span><span class="p">:</span> <span class="s2">&quot;Troca de pneus&quot;</span><span class="p">,</span> <span class="s2">&quot;deseja_email&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="c1"># Adicione mais faturas conforme necessário</span>
+<span class="gp">... </span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">imprime_lista_de_faturas</span><span class="p">(</span><span class="n">faturas</span><span class="p">)</span>
+<span class="go">{&#39;cliente&#39;: 1, &#39;veiculo&#39;: 101, &#39;data&#39;: datetime.date(2023, 12, 1), &#39;descricao&#39;: &#39;Reparo de motor&#39;, &#39;deseja_email&#39;: True}</span>
+<span class="go">{&#39;cliente&#39;: 2, &#39;veiculo&#39;: 102, &#39;data&#39;: datetime.date(2023, 12, 2), &#39;descricao&#39;: &#39;Troca de pneus&#39;, &#39;deseja_email&#39;: False}</span>
+<span class="go">...</span>
+</pre></div>
+</div>
+</dd></dl>
+
 </section>
 
         </article>
@@ -243,16 +344,36 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">faturas module</a><ul>
+<li><a class="reference internal" href="#faturas.cria_nova_fatura"><code class="docutils literal notranslate"><span class="pre">cria_nova_fatura()</span></code></a></li>
+<li><a class="reference internal" href="#faturas.imprime_lista_de_faturas"><code class="docutils literal notranslate"><span class="pre">imprime_lista_de_faturas()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/scripts/furo.js"></script>
-    <script src="_static/translations.js"></script>
+</div><script src="_static/documentation_options.js?v=103ffe9a"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/translations.js?v=3b002d5c"></script>
     </body>
 </html>
