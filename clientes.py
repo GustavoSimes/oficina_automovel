@@ -22,14 +22,14 @@ def cria_novo_cliente():
 
     >>> novo_cliente = cria_novo_cliente()
     Introduza os dados do novo cliente:
-    Nome: John Doe
-    Idade: 30
+    Nome: Simão Marcos
+    Idade: 65
     NIF: 123456789
-    Endereço: 123 Main Street
-    E-mail: john.doe@example.com
+    Endereço: 8125 Rua dos Furados
+    E-mail: simao.marcos@exemplo.com
 
     >>> print(novo_cliente)
-    {'nome': 'John Doe', 'idade': '30', 'nif': '123456789', 'endereco': '123 Main Street', 'email': 'john.doe@example.com'}
+    {'nome': 'Simão Marcos', 'idade': '65', 'nif': '123456789', 'endereco': '8125 Rua dos Furados', 'email': 'simao.marcos@exemplo.com'}
     """
     
     print("Introduza os dados do novo cliente:")
