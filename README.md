@@ -6,7 +6,7 @@ Bem-vindo à Oficina Automóvel, o seu espaço dedicado a informações sobre a 
 
 [Oficina Automóvel](https://github.com/GustavoSimes/oficina_automovel) é uma oficina onde pode deixar o seu veículo com confiança!
 
-## Como começar
+## Como usar
 
 Descarregue o código e faça "run" no seu IDE de escolha, depois utilize o terminal em conjunto com o teclado do computador para introduzir imformação.
 
