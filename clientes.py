@@ -3,9 +3,33 @@ from io_terminal import imprime_lista
 nome_ficheiro_lista_de_clientes = "lista_de_clientes.pk"
 
 def cria_novo_cliente():
-    """Pedir os dados de um novo cliente
+    """
+    Pedir os dados de um novo cliente.
 
-    :return: dicionario com o novo cliente, {"nome": <<nome>>, "nif": <<nif>>, ...}
+    Esta função solicita ao usuário que forneça os dados de um novo cliente,
+    incluindo nome, idade, NIF, endereço e e-mail. Os dados são lidos a partir
+    da entrada padrão.
+
+    :return: Um dicionário representando o novo cliente, com as seguintes chaves:
+             - "nome": Nome do cliente.
+             - "idade": Idade do cliente.
+             - "nif": Número de Identificação Fiscal (NIF) do cliente.
+             - "endereco": Endereço do cliente.
+             - "email": Endereço de e-mail do cliente.
+    :rtype: dict
+
+    Exemplo de uso:
+
+    >>> novo_cliente = cria_novo_cliente()
+    Introduza os dados do novo cliente:
+    Nome: John Doe
+    Idade: 30
+    NIF: 123456789
+    Endereço: 123 Main Street
+    E-mail: john.doe@example.com
+
+    >>> print(novo_cliente)
+    {'nome': 'John Doe', 'idade': '30', 'nif': '123456789', 'endereco': '123 Main Street', 'email': 'john.doe@example.com'}
     """
     
     print("Introduza os dados do novo cliente:")
