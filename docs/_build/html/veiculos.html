@@ -1,15 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="pt" data-content_root="./">
+<html class="no-js" lang="pt" data-content_root="">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Índice" href="genindex.html" /><link rel="search" title="Pesquisar" href="search.html" /><link rel="prev" title="main module" href="main.html" />
 
-    <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+    <!-- Generated with Sphinx 6.2.1 and Furo 2023.09.10 -->
         <title>veiculos module - Documentação Oficina Automóvel SAG</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=369552022d0b975c8e74270ce6eabe0fb7978f24" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
 
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -190,61 +190,14 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="module-veiculos">
-<span id="veiculos-module"></span><h1>veiculos module<a class="headerlink" href="#module-veiculos" title="Link to this heading">#</a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="veiculos.cria_novo_veiculo">
-<span class="sig-prename descclassname"><span class="pre">veiculos.</span></span><span class="sig-name descname"><span class="pre">cria_novo_veiculo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/veiculos.html#cria_novo_veiculo"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#veiculos.cria_novo_veiculo" title="Link to this definition">#</a></dt>
-<dd><p>Pede ao utilizador para introduzir um novo veiculo</p>
-<dl class="field-list simple">
-<dt class="field-odd">Retorno<span class="colon">:</span></dt>
-<dd class="field-odd"><p>dicionario com um veiculo na forma
-{«marca»: &lt;&lt;marca&gt;&gt;, «matricula»: &lt;&lt;matricula&gt;&gt;, …}</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="veiculos.imprime_lista_de_veiculos">
-<span class="sig-prename descclassname"><span class="pre">veiculos.</span></span><span class="sig-name descname"><span class="pre">imprime_lista_de_veiculos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista_de_veiculos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/veiculos.html#imprime_lista_de_veiculos"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#veiculos.imprime_lista_de_veiculos" title="Link to this definition">#</a></dt>
-<dd><p>Imprime uma lista de veículos formatada.</p>
-<p>Esta função recebe uma lista de veículos e imprime suas informações de maneira formatada.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>lista_de_veiculos</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – Uma lista de dicionários, onde cada dicionário representa um veículo.</p>
-</dd>
-<dt class="field-even">Retorno<span class="colon">:</span></dt>
-<dd class="field-even"><p>None</p>
-</dd>
-<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
-<dd class="field-odd"><p>None</p>
-</dd>
-<dt class="field-even">Example<span class="colon">:</span></dt>
-<dd class="field-even"><p></p></dd>
-</dl>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">veiculos</span> <span class="o">=</span> <span class="p">[</span>
-<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;marca&quot;</span><span class="p">:</span> <span class="s2">&quot;Toyota&quot;</span><span class="p">,</span> <span class="s2">&quot;modelo&quot;</span><span class="p">:</span> <span class="s2">&quot;Corolla&quot;</span><span class="p">,</span> <span class="s2">&quot;matricula&quot;</span><span class="p">:</span> <span class="s2">&quot;AB-123-CD&quot;</span><span class="p">,</span> <span class="s2">&quot;ano&quot;</span><span class="p">:</span> <span class="s2">&quot;2020&quot;</span><span class="p">,</span> <span class="s2">&quot;classe&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;lugares&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span> <span class="s2">&quot;cor&quot;</span><span class="p">:</span> <span class="s2">&quot;azul&quot;</span><span class="p">,</span> <span class="s2">&quot;comprimento&quot;</span><span class="p">:</span> <span class="s2">&quot;4.5&quot;</span><span class="p">,</span> <span class="s2">&quot;cilindrada&quot;</span><span class="p">:</span> <span class="s2">&quot;2000&quot;</span><span class="p">},</span>
-<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;marca&quot;</span><span class="p">:</span> <span class="s2">&quot;Honda&quot;</span><span class="p">,</span> <span class="s2">&quot;modelo&quot;</span><span class="p">:</span> <span class="s2">&quot;Civic&quot;</span><span class="p">,</span> <span class="s2">&quot;matricula&quot;</span><span class="p">:</span> <span class="s2">&quot;XY-789-ZW&quot;</span><span class="p">,</span> <span class="s2">&quot;ano&quot;</span><span class="p">:</span> <span class="s2">&quot;2019&quot;</span><span class="p">,</span> <span class="s2">&quot;classe&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;lugares&quot;</span><span class="p">:</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;cor&quot;</span><span class="p">:</span> <span class="s2">&quot;vermelho&quot;</span><span class="p">,</span> <span class="s2">&quot;comprimento&quot;</span><span class="p">:</span> <span class="s2">&quot;4.2&quot;</span><span class="p">,</span> <span class="s2">&quot;cilindrada&quot;</span><span class="p">:</span> <span class="s2">&quot;1800&quot;</span><span class="p">},</span>
-<span class="gp">... </span>    <span class="c1"># Adicione mais veículos conforme necessário</span>
-<span class="gp">... </span><span class="p">]</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">imprime_lista_de_veiculos</span><span class="p">(</span><span class="n">veiculos</span><span class="p">)</span>
-<span class="go">Lista de Veículos</span>
-<span class="go">-----------------</span>
-<span class="go">Marca: Toyota, Modelo: Corolla, Matrícula: AB-123-CD, Ano: 2020, Classe: 3, Lugares: 5, Cor: azul, Comprimento: 4.5, Cilindrada: 2000</span>
-<span class="go">Marca: Honda, Modelo: Civic, Matrícula: XY-789-ZW, Ano: 2019, Classe: 2, Lugares: 4, Cor: vermelho, Comprimento: 4.2, Cilindrada: 1800</span>
-<span class="go">...</span>
-</pre></div>
-</div>
-</dd></dl>
-
+          <section id="veiculos-module">
+<h1>veiculos module<a class="headerlink" href="#veiculos-module" title="Permalink to this heading">#</a></h1>
 </section>
 
         </article>
@@ -282,36 +235,16 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">veiculos module</a><ul>
-<li><a class="reference internal" href="#veiculos.cria_novo_veiculo"><code class="docutils literal notranslate"><span class="pre">cria_novo_veiculo()</span></code></a></li>
-<li><a class="reference internal" href="#veiculos.imprime_lista_de_veiculos"><code class="docutils literal notranslate"><span class="pre">imprime_lista_de_veiculos()</span></code></a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=103ffe9a"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
-    <script src="_static/translations.js?v=3b002d5c"></script>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script src="_static/translations.js"></script>
     </body>
 </html>
