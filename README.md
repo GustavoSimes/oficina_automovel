@@ -2,6 +2,11 @@
 
 Bem-vindo à Oficina Automóvel, o seu espaço dedicado a informações sobre a nossa oficina.
 
+## Introdução
+
+Este programa tem como objetivo servir de guia para o cliente, pode ver os nossos serviços e guardar as suas informações para uso posterior.
+Será desenvolvido também um website que certamente será muito útil para o cliente.
+
 ## Sobre nós
 
 [Oficina Automóvel](https://github.com/GustavoSimes/oficina_automovel) é uma oficina onde pode deixar o seu veículo com confiança!
